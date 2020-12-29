@@ -7,14 +7,10 @@
     <title>Hello Flask</title>
 </head>
 <body>
-    <!-- {{ url_for('index') }} is using Jinja templating-->
-    <nav>
-        <!-- Nav link for home page - links to index.html -->
-        <li><a href="{{ url_for('index') }}">Home</a></li>
-        <!-- Nav link for about page - links to about.html -->
-        <li><a href="{{ url_for('about') }}">About</a></li>
-    </nav>
-
+    <!-- code block to drop in content from base.html -->
+    {% extends 'base.html' %}
+    {% block content %}
     <h1>Home Page</h1>
+    {% endblock %}
 </body>
 </html>
