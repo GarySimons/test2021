@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Contact Form</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/integration
-            emailjs.init("user_HgabIlpCwGFwnlJUA5xol");
+            emailjs.init('YOUR_USER_ID');
         })();
     </script>
     <script type="text/javascript">
@@ -27,10 +27,6 @@
     </script>
 </head>
 <body>
-    <!-- code block to drop in content from base.html -->
-    {% extends 'base.html' %}
-    {% block content %}
-    <h1>Get In Touch!</h1>
     <form id="contact-form">
         <input type="hidden" name="contact_number">
         <label>Name</label>
@@ -41,6 +37,5 @@
         <textarea name="message"></textarea>
         <input type="submit" value="Send">
     </form>
-    {% endblock %}
 </body>
 </html>
